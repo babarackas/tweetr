@@ -14,12 +14,23 @@ html {
  * Global layout stuff
  */
 
+
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
+main {
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  margin-top:140px;
+  border-radius: 8px;
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
