@@ -1,30 +1,79 @@
 .new-tweet {
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
   background-color: #eee;
+  border: black solid;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 10em 10em .2em 10em;
+  padding: 1em 1.5em 1em 1.5em;
 }
 
 .new-tweet h2 {
-  border-bottom: 2px solid;
+  border-bottom: solid .075em #244751;
+  margin: 1px;
 }
 
-textarea {
+.new-tweet textarea {
+  background-color: white;
+  height: 6em;
+  margin: 2em 0 1.2em 0;
+  width: 100%;
+}
+
+.new-tweet input {
+  border-radius: 5px;
   position: relative;
-  left: 10px;
-  padding: 5px;
-  width: 95%
 }
 
 .counter {
   position: relative;
-  left: 325px;
+  float:right;
 }
 
-.counter.red {
-  color: red;
+.over {
+    color: red;
 }
 
-.counter.green {
-  color: green;
+.tweet {
+  background-color: #eee;
+  border-radius: 5px;
+  border: solid black;
+  border-width: 1px;
+  margin: .2em 10em .2em 10em;
 }
+
+.tweet .name {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.tweet .handle {
+  color: #949292;
+  float: right;
+  margin: 1em 1em 0 0;
+  vertical-align: top;
+}
+
+.tweet .avatars {
+  display: inline-block;
+  border-radius: 5px;
+  height: 65px;
+  width: 65px;
+}
+
+.tweet content {
+  background-color: white;
+  display: block;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.tweet footer {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: solid .075em #eee;
+  padding: .5em;
+}
+

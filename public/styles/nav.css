@@ -18,4 +18,10 @@
   float: left;
 }
 
+#nav-bar .header {
+  float: left;
+  font-size: 1.5em;
+  line-height: 80px;
+  margin: 10px;
+}
 

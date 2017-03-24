@@ -23,14 +23,12 @@ body {
 }
 
 main {
-  width: 450px;
-  background-color: white;
+  width: 75%;
+  height: 100%;
   margin: auto;
-  position: relative;
-  margin-top:140px;
-  border-radius: 8px;
-
-}
+  margin-top: -5em;
+  background-color: ghostwhite;
+ }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
