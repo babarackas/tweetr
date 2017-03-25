@@ -24,6 +24,7 @@ $(document).ready(function() {
 
 
   function createTweetElement(tweetData) {
+
     var $tweet = $('<article>').addClass('tweet')
       .append($('<header>')
         .append($('<img>').addClass('avatars').attr('src', tweetData.user.avatars.regular))
@@ -69,6 +70,21 @@ $(document).ready(function() {
 
   $('#textarea').on("focus", hideError);
 
+  ///Question for Dave how to get slide down to work
+
+$('.composeButton').on("click", function(event) {
+    event.preventDefault()
+    if ( $( ".new-Tweet" ).is( ":hidden" ) ) {
+    $( ".new-Tweet" ).slideDown( "slow" );
+    //focus on that text area
+    $('#textarea').focus();
+    } else {
+    $( ".new-Tweet" ).hide();
+  }
+});
+
+
+
 
   $('#button').on("click", function(event) {
     event.preventDefault()
@@ -96,6 +112,7 @@ $(document).ready(function() {
     }).done(function(tweet) {
       let newTweet = createTweetElement(tweet);
       $('#tweets-container').prepend(newTweet);
+
     });
   })
 });

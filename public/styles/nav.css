@@ -30,11 +30,15 @@
   margin-top: 0.5em;
   border-radius: 5px;
   background-color: ghostwhite;
-  color: teal;
+  color: black;
   font-size: 0.75em;
   height: 70px;
   line-height: 20px;
-
-
 }
 
+#nav-bar .compose:hover {
+    border-width:2px;
+    border-style:solid;
+    color: black;
+    color: teal;
+}
