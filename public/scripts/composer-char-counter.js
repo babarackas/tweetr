@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  maxCharacters = 160;
+  maxCharacters = 140;
 
   $('.counter').text(maxCharacters);
 
