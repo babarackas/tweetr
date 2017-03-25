@@ -40,22 +40,23 @@
   border-width: 1px;
   margin: .2em 10em .2em 10em;
 }
-
-.tweet .name {
+  .tweet h2 {
   display: inline-block;
   font-size: 2em;
   font-weight: 700;
   vertical-align: top;
+  margin-left: 1em;
 }
 
-.tweet .handle {
+  h4 {
+  display: inline-block;
   color: #949292;
   float: right;
   margin: 1em 1em 0 0;
   vertical-align: top;
 }
 
-.tweet .avatars {
+ .tweet img{
   display: inline-block;
   border-radius: 5px;
   height: 65px;
@@ -76,4 +77,5 @@
   border-top: solid .075em #eee;
   padding: .5em;
 }
+
 
