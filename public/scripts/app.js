@@ -72,18 +72,16 @@ $(document).ready(function() {
 
   ///Question for Dave how to get slide down to work
 
-$('.composeButton').on("click", function(event) {
+$('.compose').on("click", function(event) {
     event.preventDefault()
-    if ( $( ".new-Tweet" ).is( ":hidden" ) ) {
-    $( ".new-Tweet" ).slideDown( "slow" );
+    if ( $( ".new-tweet" ).is( ":hidden" ) ) {
+    $( ".new-tweet" ).slideDown( "slow" );
     //focus on that text area
     $('#textarea').focus();
     } else {
-    $( ".new-Tweet" ).hide();
+    $( ".new-tweet" ).hide();
   }
 });
-
-
 
 
   $('#button').on("click", function(event) {
@@ -95,7 +93,7 @@ $('.composeButton').on("click", function(event) {
       errorMessage = 'Please enter text';
     }
     if(textVal.length > 140){
-      errorMessage = 'You have used to many characters';
+      errorMessage = 'You have used too many characters';
       }
     if(errorMessage){
       $('#errorSpot').text(errorMessage);
