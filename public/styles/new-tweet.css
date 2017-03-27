@@ -3,13 +3,13 @@
   border: black solid;
   border-radius: 5px;
   border-width: 1px;
-  margin: 9em 10em .2em 10em;
+  margin: 1em 10em .2em 10em;
   padding: 1em 1.5em 1em 1.5em;
   display: none;
 }
 
 .new-tweet h2 {
-  border-bottom: solid .075em #244751;
+  border-bottom: solid .075em grey;
   margin: 1px;
 }
 
@@ -27,29 +27,36 @@
 
 .counter {
   position: relative;
-  float:right;
+  float: right;
 }
 
 .over {
-    color: red;
+  color: red;
 }
 
 .tweet {
+  /*position: relative;*/
   background-color: #eee;
   border-radius: 5px;
-  border: solid black;
+  border: solid grey;
   border-width: 1px;
-  margin: 6em 10em .2em 10em;
+  margin: 2em 10em .2em 10em;
 }
-  .tweet h2 {
+.tweet:hover{
+    border: solid black;
+    border-width: 1px;
+    visibility: visible;
+}
+
+
+.tweet h2 {
   display: inline-block;
   font-size: 2em;
-  font-weight: 700;
   vertical-align: top;
   margin-left: 1em;
 }
 
-  h4 {
+h4 {
   display: inline-block;
   color: #949292;
   float: right;
@@ -57,11 +64,12 @@
   vertical-align: top;
 }
 
- .tweet img{
+.tweet img {
   display: inline-block;
   border-radius: 5px;
-  height: 65px;
-  width: 65px;
+  height: 25%
+  width: 25%;
+  margin: .5em;
 }
 
 .tweet content {
@@ -78,3 +86,4 @@
   border-top: solid .075em #eee;
   padding: .5em;
 }
+

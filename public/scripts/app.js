@@ -70,8 +70,8 @@ $(document).ready(function() {
 
   $('#textarea').on("focus", hideError);
 
-  ///Question for Dave how to get slide down to work
 
+//slide down toggle to add compose tweet container
 $('.compose').on("click", function(event) {
     event.preventDefault()
     if ( $( ".new-tweet" ).is( ":hidden" ) ) {
@@ -79,7 +79,7 @@ $('.compose').on("click", function(event) {
     //focus on that text area
     $('#textarea').focus();
     } else {
-    $( ".new-tweet" ).hide();
+      $( ".new-tweet" ).slideUp( "slow" );
   }
 });
 
